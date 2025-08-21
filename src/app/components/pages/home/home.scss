@@ -1,0 +1,5 @@
+@use 'sizes';
+
+:host {
+  margin-top: sizes.$px-16;
+}

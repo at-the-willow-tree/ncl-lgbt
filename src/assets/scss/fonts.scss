@@ -1,0 +1,17 @@
+// Inclusive sans by Olivia King: https://www.oliviaking.com/inclusivesans
+$inclusive-sans: 'inclusive-sans';
+$inclusive-sans-italic: 'inclusive-sans-italic';
+
+@font-face {
+  font-style: normal;
+  src: url('../fonts/InclusiveSans.ttf');
+  font-family: $inclusive-sans;
+  font-display: auto;
+}
+
+@font-face {
+  font-style: italic;
+  src: url('../fonts/InclusiveSans-Italic.ttf');
+  font-family: $inclusive-sans-italic;
+  font-display: auto;
+}

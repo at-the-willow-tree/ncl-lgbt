@@ -1,0 +1,12 @@
+@use 'fonts';
+@use 'colors';
+
+* {
+  font-family: fonts.$inclusive-sans;
+  color: colors.$dark;
+}
+
+em,
+i {
+  font-family: fonts.$inclusive-sans-italic;
+}
