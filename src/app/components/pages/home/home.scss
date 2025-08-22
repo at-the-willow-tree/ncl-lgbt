@@ -1,5 +1,15 @@
 @use 'sizes';
 
 :host {
-  margin-top: sizes.$px-16;
+  display: flex;
+  padding: sizes.$px-24;
+  justify-content: center;
+
+  .events {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: sizes.$px-16;
+  }
+
 }

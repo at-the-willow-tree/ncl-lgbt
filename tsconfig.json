@@ -16,7 +16,8 @@
     "module": "preserve",
     "baseUrl": "./",
     "paths": {
-      "@model/*": ["src/app/model/*"]
+      "@model/*": ["src/app/model/*"],
+      "@constants/*": ["src/app/constants/*"],
     }
   },
   "angularCompilerOptions": {

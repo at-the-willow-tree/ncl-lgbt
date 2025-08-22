@@ -1,9 +1,10 @@
 @use 'fonts';
 @use 'colors';
+@use 'sizes';
 
 * {
   font-family: fonts.$inclusive-sans;
-  color: colors.$dark;
+  color: colors.$light;
 }
 
 em,
