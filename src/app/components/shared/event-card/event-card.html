@@ -7,10 +7,10 @@
     <img src="assets/icons/calendar-smile.svg" alt="event date">
     <p class="detail__date__text">{{start() | date: dateFormat}}</p>
   </div>
-  @if(location()?.title) {
+  @if(location().title) {
   <div class="detail__location">
     <img src="assets/icons/map-pin.svg" alt="event location">
-    <p class="detail__location__text">{{location()?.title}}</p>
+    <p class="detail__location__text">{{location().title}}</p>
 
   </div>
 
