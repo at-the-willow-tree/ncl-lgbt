@@ -1,0 +1,10 @@
+<header class="header">
+
+<nav class="header__nav">
+  <h3 class="header__nav__link" [routerLink]="'/' + navPaths.Home" routerLinkActive="header__nav__link--active" [routerLinkActiveOptions]="{exact: true}" ><a>Home</a></h3>
+  <h3 class="header__nav__link" [routerLink]="'/' + navPaths.Events" routerLinkActive="header__nav__link--active"><a>Events</a></h3>
+  <h3 class="header__nav__link" [routerLink]="'/' + navPaths.Fundraisers" routerLinkActive="header__nav__link--active"><a>Fundraisers</a></h3>
+  <h3 class="header__nav__link" [routerLink]="'/' + navPaths.Resources" routerLinkActive="header__nav__link--active"><a>Resources</a></h3>
+  <h3 class="header__nav__link" [routerLink]="'/' + navPaths.About" routerLinkActive="header__nav__link--active" ><a>About</a></h3>
+</nav>
+</header>

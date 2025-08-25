@@ -1,0 +1,49 @@
+@use 'sizes';
+@use 'colors';
+
+:host {
+  position: relative;
+  top: 0;
+  background-color: colors.$blue-faded;
+  padding: sizes.$px-24;
+  width: 100%;
+  color: colors.$dark;
+
+  .header {
+
+    &__nav {
+      display: flex;
+      flex-direction: row;
+      gap: sizes.$px-32;
+      align-items: center;
+      justify-content: center;
+
+      &__link {
+
+        cursor: pointer;
+        text-decoration: none;
+        color: colors.$dark;
+        padding: sizes.$px-4 sizes.$px-8;
+
+        &:visited {
+          text-decoration: none;
+          color: inherit;
+        }
+
+        &:active {
+          background-color: colors.$pink-intense !important;
+        }
+
+
+        &:hover:not(&--active) {
+          background-color: colors.$pink-faded;
+        }
+
+        &--active {
+          background-color: colors.$pink;
+        }
+      }
+    }
+
+  }
+}

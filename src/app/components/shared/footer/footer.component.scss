@@ -1,0 +1,8 @@
+@use 'sizes';
+@use 'colors';
+
+:host {
+  color: colors.$light;
+  margin-top: auto;
+  justify-self: flex-end;
+}

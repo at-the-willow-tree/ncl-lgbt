@@ -4,10 +4,43 @@
 
 * {
   font-family: fonts.$inclusive-sans;
-  color: colors.$light;
 }
 
 em,
 i {
   font-family: fonts.$inclusive-sans-italic;
+}
+
+h1 {
+  color: colors.$light;
+}
+
+h2 {
+  color: colors.$light;
+
+}
+
+h3 {
+  color: colors.$light;
+
+}
+
+h4 {
+  color: colors.$light;
+
+}
+
+h5 {
+  color: colors.$light;
+
+}
+
+p {
+  color: colors.$light;
+}
+
+a,
+b,
+i {
+  color: inherit;
 }
