@@ -4,12 +4,35 @@
 :host {
   position: relative;
   top: 0;
-  background-color: colors.$blue-faded;
+  background-color: colors.$pink-faded;
   padding: sizes.$px-24;
   width: 100%;
   color: colors.$dark;
 
   .header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: sizes.$px-32;
+    position: relative;
+
+    &__flags {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: sizes.$px-8;
+
+      &__flag {
+        height: sizes.$px-48;
+        cursor: pointer;
+
+      }
+    }
+
 
     &__nav {
       display: flex;
@@ -17,6 +40,8 @@
       gap: sizes.$px-32;
       align-items: center;
       justify-content: center;
+      margin: 0 auto;
+
 
       &__link {
 
@@ -30,17 +55,12 @@
           color: inherit;
         }
 
-        &:active {
-          background-color: colors.$pink-intense !important;
-        }
-
-
-        &:hover:not(&--active) {
-          background-color: colors.$pink-faded;
+        &:hover {
+          background-color: colors.$blue-faded;
         }
 
         &--active {
-          background-color: colors.$pink;
+          background-color: colors.$blue-faded;
         }
       }
     }

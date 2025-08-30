@@ -7,4 +7,5 @@ export enum NavPaths {
   Submit = 'submit',
   Review = 'review',
   Resources = 'resources',
+  Contact = 'contact',
 }

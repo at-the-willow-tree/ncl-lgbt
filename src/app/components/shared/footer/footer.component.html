@@ -1,1 +1,11 @@
-<p>footer works!</p>
+<footer class="footer">
+  <nav class="footer__nav">
+    <p class="footer__nav__link" [routerLink]="'/' + navPaths.Home" routerLinkActive="footer__nav__link--active" [routerLinkActiveOptions]="{exact: true}" ><a>Home</a></p>
+    <p class="footer__nav__link" [routerLink]="'/' + navPaths.Events" routerLinkActive="footer__nav__link--active"><a>Events</a></p>
+    <p class="footer__nav__link" [routerLink]="'/' + navPaths.Fundraisers" routerLinkActive="footer__nav__link--active"><a>Fundraisers</a></p>
+    <p class="footer__nav__link" [routerLink]="'/' + navPaths.Resources" routerLinkActive="footer__nav__link--active"><a>Resources</a></p>
+    <p class="footer__nav__link" [routerLink]="'/' + navPaths.Contact" routerLinkActive="footer__nav__link--active" ><a>Contact</a></p>
+    <p class="footer__nav__link" [routerLink]="'/' + navPaths.About" routerLinkActive="footer__nav__link--active" ><a>About</a></p>
+  </nav>
+  <a (click)="scrollToTop()" class="footer__scroll-to-top">Scroll to top</a>
+</footer>
