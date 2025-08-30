@@ -1,0 +1,69 @@
+@use 'sizes';
+@use 'colors';
+
+:host {
+  position: relative;
+  top: 0;
+  background-color: colors.$pink-faded;
+  padding: sizes.$px-24;
+  width: 100%;
+  color: colors.$dark;
+
+  .header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: sizes.$px-32;
+    position: relative;
+
+    &__flags {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: sizes.$px-8;
+
+      &__flag {
+        height: sizes.$px-48;
+        cursor: pointer;
+
+      }
+    }
+
+
+    &__nav {
+      display: flex;
+      flex-direction: row;
+      gap: sizes.$px-32;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+
+
+      &__link {
+
+        cursor: pointer;
+        text-decoration: none;
+        color: colors.$dark;
+        padding: sizes.$px-4 sizes.$px-8;
+
+        &:visited {
+          text-decoration: none;
+          color: inherit;
+        }
+
+        &:hover {
+          background-color: colors.$blue-faded;
+        }
+
+        &--active {
+          background-color: colors.$blue-faded;
+        }
+      }
+    }
+
+  }
+}

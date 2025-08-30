@@ -1,0 +1,50 @@
+@use 'sizes';
+@use 'colors';
+
+:host {
+  border-top: 1px solid colors.$orange;
+  padding-top: sizes.$px-8;
+  padding-bottom: sizes.$px-8;
+  width: 100%;
+  color: colors.$light;
+  margin-top: auto;
+  justify-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: colors.$darker;
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    gap: sizes.$px-8;
+    text-align: center;
+
+    &__nav {
+      display: flex;
+      flex-direction: row;
+      gap: sizes.$px-8;
+
+      &__link {
+        text-decoration: underline;
+        cursor: pointer;
+        padding: sizes.$px-4 sizes.$px-8;
+
+        color: colors.$orange;
+
+        &--active {
+          background-color: colors.$dark;
+          /* color: colors.$light; */
+        }
+      }
+
+    }
+
+    &__scroll-to-top {
+      cursor: pointer;
+      text-decoration: underline;
+      color: colors.$orange;
+    }
+  }
+
+}

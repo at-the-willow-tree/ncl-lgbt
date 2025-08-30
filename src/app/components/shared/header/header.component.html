@@ -1,0 +1,16 @@
+<header class="header">
+  <div class="header__flags">
+    <img [routerLink]="'/' + navPaths.Home" alt="intersex inclusive pride flag" class="header__flags__flag" src="assets/images/pride-flag.svg" />
+    <img alt="palestine flag" class="header__flags__flag" src="assets/images/palestine-flag.svg" />
+
+  </div>
+
+<nav class="header__nav">
+  <h3 class="header__nav__link" [routerLink]="'/' + navPaths.Home" routerLinkActive="header__nav__link--active" [routerLinkActiveOptions]="{exact: true}" ><a>Home</a></h3>
+  <h3 class="header__nav__link" [routerLink]="'/' + navPaths.Events" routerLinkActive="header__nav__link--active"><a>Events</a></h3>
+  <h3 class="header__nav__link" [routerLink]="'/' + navPaths.Fundraisers" routerLinkActive="header__nav__link--active"><a>Fundraisers</a></h3>
+  <h3 class="header__nav__link" [routerLink]="'/' + navPaths.Resources" routerLinkActive="header__nav__link--active"><a>Resources</a></h3>
+  <h3 class="header__nav__link" [routerLink]="'/' + navPaths.Contact" routerLinkActive="header__nav__link--active" ><a>Contact</a></h3>
+  <h3 class="header__nav__link" [routerLink]="'/' + navPaths.About" routerLinkActive="header__nav__link--active" ><a>About</a></h3>
+</nav>
+</header>

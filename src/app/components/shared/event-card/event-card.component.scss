@@ -1,0 +1,49 @@
+@use 'sizes';
+@use 'colors';
+
+:host {
+  display: flex;
+  flex-direction: row;
+  background-color: colors.$darker;
+  padding: sizes.$px-24;
+  border-radius: sizes.$px-8;
+
+  gap: sizes.$px-16;
+
+  .image {
+    max-width: sizes.$px-256;
+
+    &__picture {
+      object-fit: cover;
+    }
+  }
+
+  .detail {
+    display: flex;
+    flex-direction: column;
+    gap: sizes.$px-16;
+
+    h1 {
+      color: colors.$light-dark;
+    }
+
+    &__date,
+    &__location {
+      display: flex;
+      flex-direction: row;
+      gap: sizes.$px-8;
+      align-items: center;
+
+      img {
+        filter: colors.$filter-orange;
+        width: sizes.$px-32;
+      }
+
+      &__text {
+        color: colors.$light-dark;
+        font-weight: bold;
+      }
+    }
+  }
+
+}

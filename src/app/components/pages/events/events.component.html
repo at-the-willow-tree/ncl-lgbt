@@ -1,0 +1,22 @@
+<ncl-header></ncl-header>
+@let events = $currentPageData | async;
+@if (events) {
+  <div class="events" infiniteScroll (scrolled)="nextPage()">
+    @for (event of events; track event._id) {
+      <ncl-event-card [title]="event.title" [start]="event.startDate"></ncl-event-card>
+    } @empty {
+      <div class="events--empty">
+        <h1>There doesn't seem to be anything here right now! :('</h1>
+        </div>
+    }
+  </div>
+    @if(isLoading) {
+      <h1>LOADING MORE DATA</h1>
+    }
+} @else {
+  <!-- Shown before any data is loaded -->
+    <div class="loading">
+    <h1>Loading data now!</h1>
+    </div>
+}
+<ncl-footer></ncl-footer>
